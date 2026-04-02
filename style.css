@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh; 
+}
+
+.container{
+    /* height:470px;
+    background: linear-gradient(135deg , #00feba , #5b548a);
+    color:#fff;
+    text-align:center;
+    padding:40px;
+    border-radius:20px; */
+
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(135deg , #00feba , #5b548a);
+    color:#fff;
+    text-align:center;
+    padding:40px 25px;
+    border-radius:20px;
+
+}
+
+.search{
+    /* width:100%;
+    display:flex;
+    align-items:center; */
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.search input{
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    color:#555;
+    padding:10px 25px;
+    /* height:60px; */
+    border-radius:30px;
+    /* flex:1; */
+    margin-right:16px;
+    font-size:18px;
+
+    flex:1;
+    min-width:0;
+}
+
+.search button{
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    color:#555;
+    /* padding:10px 25px; */
+    border-radius:50%;
+    font-size:18px;
+    height:40px;
+    width:40px;
+    cursor: pointer;
+}
+
+.weather{
+    margin-top:30px;
+}
+.weather-icons{
+    width:100px;
+    height:100px;
+    margin-bottom:10px;
+}
+
+.details{
+    /* display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:70px; */
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:40px;
+    gap:20px
+}
+
+/* .wind , .humidity{
+    font-weight:bold;
+    font-size:20px;
+} */
+
+.col{
+    display:flex;
+}
+
+.col .icons{
+    font-size:40px;
+}
+
+ 
+
+@media (max-width: 480px) {
+
+    .container{
+        padding:30px 20px;
+    }
+
+    .temp{
+        font-size:32px;
+    }
+
+    .city{
+        font-size:18px;
+    }
+
+    .details{
+        flex-direction:column;
+        gap:25px;
+        margin-top:30px;
+    }
+
+    .col{
+        justify-content:center;
+        gap:15px;
+    }
+
+    .col .icons{
+        font-size:28px;
+    }
+
+    .weather-icons{
+        width:70px;
+        height:70px;
+    }
+}

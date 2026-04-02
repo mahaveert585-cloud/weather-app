@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Update</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- search bar -->
+        <div class="search">
+            <input type="text" placeholder="enter city name" id="city">
+            <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+     
+        <!-- weather details -->
+        <div class="weather">
+            <img src="https://www.awxcdn.com/adc-assets/images/weathericons/v2a/3.svg" class="weather-icons">
+            <h1 class="temp" id="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <div class="icons"><i class="fa-solid fa-droplet"></i></div>
+                    
+                    <div>
+                        <p class="humidity" id="humidity" style="font-size:20px;">50%</p>
+                        <p style="font-size:10px;">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="icons"><i class="fa-solid fa-wind"></i></div>
+                    
+                    <div>
+                        <p class="wind" id="wind" style="font-size:20px;">15 km/h</p>
+                        <p style="font-size:10px;">Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+ 
+ 
+
+
+<!-- https://api.openweathermap.org/data/2.5/weather?q={delhi}&appid={400f368228841dbc9838afa814800c2f}&units=metric -->
+<!-- https://www.awxcdn.com/adc-assets/images/weathericons/v2a/3.svg -->
+<!-- https://www.gstatic.com/weather/conditions/v1/svg/sunny_light.svg -->
